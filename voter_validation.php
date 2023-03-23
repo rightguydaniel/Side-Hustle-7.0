@@ -15,7 +15,7 @@
             echo "Voter's card is invalid<br>";
         }else;
         if($ade["ward"] != "020"){
-            echo "Does not below to ward 020<br>";
+            echo "Does not belong to ward 020<br>";
         }else;
 
     };
