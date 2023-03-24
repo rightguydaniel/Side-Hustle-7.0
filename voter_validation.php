@@ -1,20 +1,26 @@
 <?php
-    $ade = array( 
+    //assign voter information
+    $voter = array( 
         "name" => "ADE", 
         "age" => "17", 
         "card" => "invalid", 
         "ward" => "021" );
-    if($ade["age"] >= "17" && $ade["card"] == "valid" && $ade["ward"] == "020"){
-        echo $ade["name"]." is eligible to vote";
+    //to check if voter meets the 3 equirement to be eligible to vote
+    if($voter["age"] >= "17" && $voter["card"] == "valid" && $voter["ward"] == "020"){
+        echo $voter["name"]." is eligible to vote";
     }else{
-        echo $ade["name"]." is not eligible to vote because <br>";
-        if($ade["age"] < 18){
+        echo $voter["name"]." is not eligible to vote because <br>";
+        //to check why a voter is not eligible
+        //checking voter age
+        if($voter["age"] < 18){
             echo "he is below 18 years<br>";
         }else;
-        if($ade["card"] != "valid"){
+        //checking if voter's card is valid
+        if($voter["card"] != "valid"){
             echo "Voter's card is invalid<br>";
         }else;
-        if($ade["ward"] != "020"){
+        //checking if voter belong to ward 020
+        if($voter["ward"] != "020"){
             echo "Does not belong to ward 020<br>";
         }else;
 
